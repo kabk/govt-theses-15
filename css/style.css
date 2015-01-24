@@ -1,0 +1,154 @@
+body {
+<<<<<<< HEAD
+    font-size: 16px;
+=======
+    background-color: green;
+    font-size: 24px;
+>>>>>>> FETCH_HEAD
+    padding: 8px 16px 0px 8px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+header {
+    padding: 0 0 50px 0;
+    font-size: 30px;
+    text-decoration: line-through;
+}
+
+li {
+    list-style: none;
+    margin-bottom: 8px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 20px 0px;
+}
+
+ul, ol {
+    margin-top: 20px;
+    padding-left: 20px;
+}
+
+a, a:hover, a:visited, a:active {
+    color: black;
+}
+
+h1 a {
+    
+    font-family: comic sans;
+}
+
+p, svg {
+    margin-top: 0;
+    margin-bottom: 24px;
+}
+
+pre {
+    white-space: pre-wrap;
+}
+
+figure {
+    margin: 0;
+    padding: 1em 40px;
+}
+
+figure figcaption {
+    padding-top: 1em;
+}
+/* This makes the images scale to the full width of the page */
+img {
+    width: 100%;
+    height: auto;
+}
+
+img.noscale {
+    width: inherit;
+}
+
+figure.halfleft, img.halfleft {
+    display: block;
+    width: 50%;
+    float: left; 
+}
+
+figure.halfright, img.halfright {
+    display: block;
+    width: 50%;
+    float: right; 
+}
+
+@media screen and (max-width: 480px) {
+    /* These CSS instructions are only used, if the 
+     * ‘media query’ above turns out to be true 
+     * 
+     * Media query’s can use properties like:
+     * width
+     * orientation
+     * resolution
+     * screen / print
+     */
+    /* Smaller Screens */
+    /* Our heading can be smaller */
+     header h1 {
+        font-size: 16px;
+        font-style: italic;
+    }
+    
+    figure.halfleft, img.halfleft {
+        width: 100%;
+        float: inherit; 
+    }
+
+    figure.halfright, img.halfright {
+        width: 100%;
+        float: inherit; 
+    }
+}
+
+@media only screen and (min-width: 480px) {
+    article { 
+    /* Larger Screens */
+        width: calc(100% - 200px);
+        float: right;
+        margin-right: 0;
+        font-size: 24px;
+        line-height: 24px;
+        font-color: blue;
+        font-family: comic sans;
+        
+        
+/* If ever we want to mirror the text:
+        -moz-transform: scale(-1, 1);
+        -webkit-transform: scale(-1, 1);
+        -o-transform: scale(-1, 1);
+        -ms-transform: scale(-1, 1);
+        transform: scale(-1, 1);
+*/    }
+    nav {
+        width: 200px;
+        float: left;
+        margin-left: 0;
+    }
+    footer {
+        clear: both;
+    }
+
+}
+
+@media only print {
+    /**
+     * When printing, the header is useful but it doesn’t need
+     * to be so big
+     */
+    header h1 {
+        font-size: 24px;
+        font-style: italic;
+    } 
+    /* And the navigation we don’t need */
+    nav {
+        display: none;
+    }
+}
