@@ -1,10 +1,5 @@
 body {
-<<<<<<< HEAD
     font-size: 16px;
-=======
-    background-color: green;
-    font-size: 24px;
->>>>>>> FETCH_HEAD
     padding: 8px 16px 0px 8px;
 }
 
@@ -152,3 +147,25 @@ figure.halfright, img.halfright {
         display: none;
     }
 }
+
+div.preview {
+  width: 602px;
+  margin-bottom: 30px;
+}
+
+div.preview figure {
+  border: 1px solid #ccc;
+  border-bottom: none;
+  margin: 0;
+  padding: 0;
+}
+
+div.preview img {
+  width: 600px;
+  height: 315px;
+}
+
+div.preview p:last-child {
+  margin-bottom: 0;
+}
+
