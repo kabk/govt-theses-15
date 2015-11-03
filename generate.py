@@ -24,11 +24,11 @@ template = open('_template.html', 'r', 'utf-8').read()
 thesis_template = """
 <div class="preview">
     <figure>
-        <img src="{image}"/>
+        <a href="{url}"><img src="{image}"/></a>
     </figure>
-    <h4>{creator}, {title}</h4>
-    <p>{description}</p>
-    <p><a href="{url}">{url}</a></p>
+    <h2><a href="{url}">{title}</a></h2>
+    <h3>{creator}</h3>
+    <p>{description} <a href="{url}">Continue reading…</a></p>
 </div>
 
 """

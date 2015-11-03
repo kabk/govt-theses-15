@@ -1,6 +1,8 @@
 body {
     font-size: 16px;
     padding: 8px 16px 0px 8px;
+    font-family: NeueHaasUnicaPro-Light, sans-serif;
+    font-weight: 100;
 }
 
 * {
@@ -13,13 +15,50 @@ header {
     text-decoration: line-through;
 }
 
+article { 
+    max-width: 602px;
+}
+
 li {
     list-style: none;
     margin-bottom: 8px;
 }
 
+dt, dd {
+    margin-bottom: 2px;
+}
+
+dt {
+    margin-top: 6px;
+}
+
 h1, h2, h3, h4, h5, h6 {
-    margin: 20px 0px;
+    font-weight: 100;
+}
+
+h2, h4 {
+  font-size: 28px;
+  line-height: 30px;
+  text-transform: uppercase;
+  margin: 7px 0 0px 0;
+}
+
+h2 a {
+    text-decoration: none;
+}
+
+h3, h5 {
+  font-size: 21px;
+  line-height: 24px;
+  margin: 0px 0 7px 0;
+}
+
+h4 {
+  font-size: 21px;
+}
+
+h6 {
+  font-size: 14px;
 }
 
 ul, ol {
@@ -31,14 +70,15 @@ a, a:hover, a:visited, a:active {
     color: black;
 }
 
-h1 a {
-    
-    font-family: comic sans;
-}
-
 p, svg {
     margin-top: 0;
     margin-bottom: 24px;
+}
+
+p {
+  font-size: 21px;
+  line-height: 24px;
+  margin: 14px 0;
 }
 
 pre {
@@ -53,26 +93,17 @@ figure {
 figure figcaption {
     padding-top: 1em;
 }
+
 /* This makes the images scale to the full width of the page */
 img {
-    width: 100%;
+    max-width: 600px;
+    max-height: 315px;
+    width: auto;
     height: auto;
 }
 
-img.noscale {
-    width: inherit;
-}
-
-figure.halfleft, img.halfleft {
-    display: block;
-    width: 50%;
-    float: left; 
-}
-
-figure.halfright, img.halfright {
-    display: block;
-    width: 50%;
-    float: right; 
+header select {
+    float: right;
 }
 
 @media screen and (max-width: 480px) {
@@ -88,49 +119,20 @@ figure.halfright, img.halfright {
     /* Smaller Screens */
     /* Our heading can be smaller */
      header h1 {
-        font-size: 16px;
-        font-style: italic;
+        font-size: 20px;
     }
-    
-    figure.halfleft, img.halfleft {
-        width: 100%;
-        float: inherit; 
+    p {
+      font-size: 16px;
+      line-height: 24px;
+      margin: 14px 0;
     }
 
-    figure.halfright, img.halfright {
-        width: 100%;
-        float: inherit; 
-    }
 }
 
 @media only screen and (min-width: 480px) {
-    article { 
-    /* Larger Screens */
-        width: calc(100% - 200px);
-        float: right;
-        margin-right: 0;
-        font-size: 24px;
-        line-height: 24px;
-        font-color: blue;
-        font-family: comic sans;
-        
-        
-/* If ever we want to mirror the text:
-        -moz-transform: scale(-1, 1);
-        -webkit-transform: scale(-1, 1);
-        -o-transform: scale(-1, 1);
-        -ms-transform: scale(-1, 1);
-        transform: scale(-1, 1);
-*/    }
-    nav {
-        width: 200px;
-        float: left;
-        margin-left: 0;
+    article, header {
+        margin-left: 40px;
     }
-    footer {
-        clear: both;
-    }
-
 }
 
 @media only print {
@@ -140,16 +142,11 @@ figure.halfright, img.halfright {
      */
     header h1 {
         font-size: 24px;
-        font-style: italic;
     } 
-    /* And the navigation we don’t need */
-    nav {
-        display: none;
-    }
 }
 
 div.preview {
-  width: 602px;
+  max-width: 602px;
   margin-bottom: 30px;
 }
 
@@ -158,11 +155,6 @@ div.preview figure {
   border-bottom: none;
   margin: 0;
   padding: 0;
-}
-
-div.preview img {
-  width: 600px;
-  height: 315px;
 }
 
 div.preview p:last-child {
