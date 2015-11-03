@@ -52,3 +52,7 @@ final_theses = [
     "govt-theses-15-fedor-velyaminov-on-aesthetics", 
 ]
 
+if __name__ == "__main__":
+    # Print all URL’s
+    for slug in final_theses:
+        print "http://kabk.github.io/%s/" % slug
