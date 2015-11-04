@@ -10,7 +10,7 @@ body {
 }
 
 header {
-    padding: 0 0 50px 0;
+    padding: 0 0 20px 0;
     font-size: 30px;
     text-decoration: line-through;
 }
@@ -36,11 +36,15 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 100;
 }
 
+h1 {
+    margin: 0 0 0 0;
+}
+
 h2, h4 {
   font-size: 28px;
   line-height: 30px;
   text-transform: uppercase;
-  margin: 7px 0 0px 0;
+  margin: 12px 0 0px 0;
 }
 
 h2 a {
@@ -81,6 +85,10 @@ p {
   margin: 14px 0;
 }
 
+p.spacer {
+    line-height: 0;
+}
+
 pre {
     white-space: pre-wrap;
 }
@@ -98,7 +106,7 @@ figure figcaption {
 img {
     max-width: 600px;
     max-height: 315px;
-    width: auto;
+    width: 100%;
     height: auto;
 }
 
@@ -158,6 +166,6 @@ div.preview figure {
 }
 
 div.preview p:last-child {
-  margin-bottom: 0;
+  margin-bottom: 54px;
 }
 
